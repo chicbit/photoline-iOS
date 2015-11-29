@@ -45,7 +45,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="E9n-w3-5yo" kind="modal" id="hHI-QR-J9c"/>
+                                    <segue destination="E9n-w3-5yo" kind="modal" modalTransitionStyle="crossDissolve" id="hHI-QR-J9c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,6 +64,10 @@
                             <constraint firstItem="nTI-gp-bXk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="xaV-jg-gVA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="n2i-54-f1N" id="KkJ-tX-OjH"/>
+                        <outlet property="messageLabel" destination="nTI-gp-bXk" id="ZCA-od-8Pl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,7 +145,7 @@
                                 </state>
                                 <connections>
                                     <action selector="doneButtonPushed:" destination="E9n-w3-5yo" eventType="touchUpInside" id="CC8-1I-1bn"/>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="TVd-l7-lwh"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="TVd-l7-lwh"/>
                                 </connections>
                             </button>
                         </subviews>

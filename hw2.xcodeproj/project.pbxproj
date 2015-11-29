@@ -16,6 +16,9 @@
 		004339E31C094DAB00FA5A6A /* hw2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 004339E21C094DAB00FA5A6A /* hw2Tests.m */; };
 		004339EE1C094DAB00FA5A6A /* hw2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 004339ED1C094DAB00FA5A6A /* hw2UITests.m */; };
 		004339FD1C0955A900FA5A6A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004339FC1C0955A900FA5A6A /* SettingsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		00433A0F1C09988200FA5A6A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00433A0E1C09988200FA5A6A /* Security.framework */; };
+		00433A111C09988800FA5A6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00433A101C09988800FA5A6A /* SystemConfiguration.framework */; };
+		C0F67FC8195235C7233D4C60 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8363728F4DE16D43ECD92D5F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 004339C41C094DAB00FA5A6A;
 			remoteInfo = hw2;
+		};
+		0066F2291C09A2860053641C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0066F2221C09A2850053641C /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
+			remoteInfo = GTLFramework;
+		};
+		0066F22B1C09A2860053641C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0066F2221C09A2850053641C /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027C11A4CA2F00BEB470;
+			remoteInfo = GTLTouchStaticLib;
+		};
+		0066F22D1C09A2860053641C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0066F2221C09A2850053641C /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
+			remoteInfo = GTLUnitTests;
+		};
+		0066F22F1C09A2860053641C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0066F2221C09A2850053641C /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
+			remoteInfo = DevelopmentTestTool;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,6 +85,12 @@
 		004339EF1C094DAB00FA5A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		004339FB1C0955A900FA5A6A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		004339FC1C0955A900FA5A6A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		00433A0E1C09988200FA5A6A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		00433A101C09988800FA5A6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0066F2221C09A2850053641C /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "google-api-objectivec-client/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
+		25D1EB65A7B7B0009D3A06C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		57B9AF333162FF5BFAD61892 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8363728F4DE16D43ECD92D5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00433A111C09988800FA5A6A /* SystemConfiguration.framework in Frameworks */,
+				00433A0F1C09988200FA5A6A /* Security.framework in Frameworks */,
+				C0F67FC8195235C7233D4C60 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +124,13 @@
 		004339BC1C094DAB00FA5A6A = {
 			isa = PBXGroup;
 			children = (
+				0066F2221C09A2850053641C /* GTL.xcodeproj */,
 				004339C71C094DAB00FA5A6A /* hw2 */,
 				004339E11C094DAB00FA5A6A /* hw2Tests */,
 				004339EC1C094DAB00FA5A6A /* hw2UITests */,
 				004339C61C094DAB00FA5A6A /* Products */,
+				47F4BAE6D8DE54AC56F8A137 /* Pods */,
+				52B2474C7A2659BF9A736FBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +188,36 @@
 			path = hw2UITests;
 			sourceTree = "<group>";
 		};
+		0066F2231C09A2850053641C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0066F22A1C09A2860053641C /* GTL.framework */,
+				0066F22C1C09A2860053641C /* libGTLTouchStaticLib.a */,
+				0066F22E1C09A2860053641C /* GTLUnitTests.xctest */,
+				0066F2301C09A2860053641C /* DevelopmentTestTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47F4BAE6D8DE54AC56F8A137 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57B9AF333162FF5BFAD61892 /* Pods.debug.xcconfig */,
+				25D1EB65A7B7B0009D3A06C8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52B2474C7A2659BF9A736FBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00433A101C09988800FA5A6A /* SystemConfiguration.framework */,
+				00433A0E1C09988200FA5A6A /* Security.framework */,
+				8363728F4DE16D43ECD92D5F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 004339F21C094DAB00FA5A6A /* Build configuration list for PBXNativeTarget "hw2" */;
 			buildPhases = (
+				8478A3F3345F8F26E3535FBA /* Check Pods Manifest.lock */,
 				004339C11C094DAB00FA5A6A /* Sources */,
 				004339C21C094DAB00FA5A6A /* Frameworks */,
 				004339C31C094DAB00FA5A6A /* Resources */,
+				E7301E486E8FCCA07BC1EBB4 /* Embed Pods Frameworks */,
+				36CE36FA9C77570A0B6D137F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +310,12 @@
 			mainGroup = 004339BC1C094DAB00FA5A6A;
 			productRefGroup = 004339C61C094DAB00FA5A6A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0066F2231C09A2850053641C /* Products */;
+					ProjectRef = 0066F2221C09A2850053641C /* GTL.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				004339C41C094DAB00FA5A6A /* hw2 */,
@@ -242,6 +324,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0066F22A1C09A2860053641C /* GTL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTL.framework;
+			remoteRef = 0066F2291C09A2860053641C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0066F22C1C09A2860053641C /* libGTLTouchStaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGTLTouchStaticLib.a;
+			remoteRef = 0066F22B1C09A2860053641C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0066F22E1C09A2860053641C /* GTLUnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GTLUnitTests.xctest;
+			remoteRef = 0066F22D1C09A2860053641C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0066F2301C09A2860053641C /* DevelopmentTestTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = DevelopmentTestTool;
+			remoteRef = 0066F22F1C09A2860053641C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		004339C31C094DAB00FA5A6A /* Resources */ = {
@@ -269,6 +382,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36CE36FA9C77570A0B6D137F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8478A3F3345F8F26E3535FBA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7301E486E8FCCA07BC1EBB4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		004339C11C094DAB00FA5A6A /* Sources */ = {
@@ -415,23 +576,77 @@
 		};
 		004339F31C094DAB00FA5A6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B9AF333162FF5BFAD61892 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hw2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-read_only_relocs",
+					suppress,
+					"-l\"AFNetworking\"",
+					"-l\"TwilioClient\"",
+					"-l\"crypto\"",
+					"-l\"ssl\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.keita.mitsu.hw2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		004339F41C094DAB00FA5A6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25D1EB65A7B7B0009D3A06C8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hw2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-read_only_relocs",
+					suppress,
+					"-l\"AFNetworking\"",
+					"-l\"TwilioClient\"",
+					"-l\"crypto\"",
+					"-l\"ssl\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.keita.mitsu.hw2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -502,6 +717,7 @@
 				004339F41C094DAB00FA5A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		004339F51C094DAB00FA5A6A /* Build configuration list for PBXNativeTarget "hw2Tests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +726,7 @@
 				004339F71C094DAB00FA5A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		004339F81C094DAB00FA5A6A /* Build configuration list for PBXNativeTarget "hw2UITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +735,7 @@
 				004339FA1C094DAB00FA5A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

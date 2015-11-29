@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AFNetworking/AFNetworking.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UILabel *messageLabel;
+@property NSString *jsonStr;
 
 
 @end
