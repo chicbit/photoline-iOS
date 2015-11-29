@@ -18,6 +18,8 @@
 		004339FD1C0955A900FA5A6A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004339FC1C0955A900FA5A6A /* SettingsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		00433A0F1C09988200FA5A6A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00433A0E1C09988200FA5A6A /* Security.framework */; };
 		00433A111C09988800FA5A6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00433A101C09988800FA5A6A /* SystemConfiguration.framework */; };
+		0066F2331C0ABDB00053641C /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0066F2321C0ABDB00053641C /* CallViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0066F2361C0AC1C00053641C /* FullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0066F2351C0AC1C00053641C /* FullViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C0F67FC8195235C7233D4C60 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8363728F4DE16D43ECD92D5F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -35,34 +37,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 004339C41C094DAB00FA5A6A;
 			remoteInfo = hw2;
-		};
-		0066F2291C09A2860053641C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0066F2221C09A2850053641C /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
-			remoteInfo = GTLFramework;
-		};
-		0066F22B1C09A2860053641C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0066F2221C09A2850053641C /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F12027C11A4CA2F00BEB470;
-			remoteInfo = GTLTouchStaticLib;
-		};
-		0066F22D1C09A2860053641C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0066F2221C09A2850053641C /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
-			remoteInfo = GTLUnitTests;
-		};
-		0066F22F1C09A2860053641C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0066F2221C09A2850053641C /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
-			remoteInfo = DevelopmentTestTool;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,7 +61,10 @@
 		004339FC1C0955A900FA5A6A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		00433A0E1C09988200FA5A6A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		00433A101C09988800FA5A6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		0066F2221C09A2850053641C /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "google-api-objectivec-client/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
+		0066F2311C0ABDB00053641C /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		0066F2321C0ABDB00053641C /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
+		0066F2341C0AC1C00053641C /* FullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullViewController.h; sourceTree = "<group>"; };
+		0066F2351C0AC1C00053641C /* FullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullViewController.m; sourceTree = "<group>"; };
 		25D1EB65A7B7B0009D3A06C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		57B9AF333162FF5BFAD61892 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8363728F4DE16D43ECD92D5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +101,6 @@
 		004339BC1C094DAB00FA5A6A = {
 			isa = PBXGroup;
 			children = (
-				0066F2221C09A2850053641C /* GTL.xcodeproj */,
 				004339C71C094DAB00FA5A6A /* hw2 */,
 				004339E11C094DAB00FA5A6A /* hw2Tests */,
 				004339EC1C094DAB00FA5A6A /* hw2UITests */,
@@ -151,6 +127,10 @@
 				004339CC1C094DAB00FA5A6A /* AppDelegate.m */,
 				004339CE1C094DAB00FA5A6A /* ViewController.h */,
 				004339CF1C094DAB00FA5A6A /* ViewController.m */,
+				0066F2341C0AC1C00053641C /* FullViewController.h */,
+				0066F2351C0AC1C00053641C /* FullViewController.m */,
+				0066F2311C0ABDB00053641C /* CallViewController.h */,
+				0066F2321C0ABDB00053641C /* CallViewController.m */,
 				004339FB1C0955A900FA5A6A /* SettingsViewController.h */,
 				004339FC1C0955A900FA5A6A /* SettingsViewController.m */,
 				004339D11C094DAB00FA5A6A /* Main.storyboard */,
@@ -186,17 +166,6 @@
 				004339EF1C094DAB00FA5A6A /* Info.plist */,
 			);
 			path = hw2UITests;
-			sourceTree = "<group>";
-		};
-		0066F2231C09A2850053641C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0066F22A1C09A2860053641C /* GTL.framework */,
-				0066F22C1C09A2860053641C /* libGTLTouchStaticLib.a */,
-				0066F22E1C09A2860053641C /* GTLUnitTests.xctest */,
-				0066F2301C09A2860053641C /* DevelopmentTestTool */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		47F4BAE6D8DE54AC56F8A137 /* Pods */ = {
@@ -310,12 +279,6 @@
 			mainGroup = 004339BC1C094DAB00FA5A6A;
 			productRefGroup = 004339C61C094DAB00FA5A6A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0066F2231C09A2850053641C /* Products */;
-					ProjectRef = 0066F2221C09A2850053641C /* GTL.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				004339C41C094DAB00FA5A6A /* hw2 */,
@@ -324,37 +287,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0066F22A1C09A2860053641C /* GTL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTL.framework;
-			remoteRef = 0066F2291C09A2860053641C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0066F22C1C09A2860053641C /* libGTLTouchStaticLib.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGTLTouchStaticLib.a;
-			remoteRef = 0066F22B1C09A2860053641C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0066F22E1C09A2860053641C /* GTLUnitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GTLUnitTests.xctest;
-			remoteRef = 0066F22D1C09A2860053641C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0066F2301C09A2860053641C /* DevelopmentTestTool */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = DevelopmentTestTool;
-			remoteRef = 0066F22F1C09A2860053641C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		004339C31C094DAB00FA5A6A /* Resources */ = {
@@ -436,6 +368,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0066F2331C0ABDB00053641C /* CallViewController.m in Sources */,
+				0066F2361C0AC1C00053641C /* FullViewController.m in Sources */,
 				004339D01C094DAB00FA5A6A /* ViewController.m in Sources */,
 				004339CD1C094DAB00FA5A6A /* AppDelegate.m in Sources */,
 				004339CA1C094DAB00FA5A6A /* main.m in Sources */,
@@ -580,6 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hw2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -618,6 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hw2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
